@@ -1,0 +1,27 @@
+{
+  "name": "hs-md-cli",
+  "scripts": {
+    "build": "rm -r dist && webpack && chmod +x dist/cli.js"
+  },
+  "bin": {
+    "mkd": "dist/cli.js"
+  },
+  "files": ["package.json", "dist/cli.js"],
+  "version": "0.0.1",
+  "author": "Han Haishan <haishanhan@gmail.com> (htttp://haishan.me)",
+  "license": "MIT",
+  "repository": "haishanh/hs-md-cli",
+  "devDependencies": {
+    "commander": "^2.17.1",
+    "remark-html": "^7.0.0",
+    "remark-parse": "^5.0.0",
+    "remark-preset-lint-markdown-style-guide": "^2.1.2",
+    "remark-stringify": "^5.0.0",
+    "remark-toc": "^5.0.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "unified": "^7.0.0",
+    "unified-stream": "^1.0.2",
+    "webpack": "^4.16.5",
+    "webpack-command": "^0.4.1"
+  }
+}
